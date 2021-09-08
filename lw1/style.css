@@ -7,6 +7,16 @@ body {
     background: #f1f1f1;
 }
 
+body {
+    margin: 0;
+    padding: 0 !important;
+    mso-line-height-rule: exactly;
+    background-color: #f1f1f1;
+}
+center {
+    width: 100%;
+    background-color: #f1f1f1;
+}
 /* What it does: Stops email clients resizing small text. */
 * {
     -ms-text-size-adjust: 100%;
@@ -95,11 +105,64 @@ img.g-img + div {
     }
 }
 
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.presentation-table {
+    margin: auto;
+}
 .primary{
     background: #17bebb;
 }
 .bg_white{
     background: #ffffff;
+}
+.presentation-table > tr > td {
+    padding: 1em 2.5em 0 2.5em;
+}
+
+.logo {
+    text-align: left;
+}
+
+.hero {
+    padding: 2em 0 2em 0;
+}
+
+.tr-border-bottom {
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.tr-border-bottom th {
+    text-align:left;
+    padding: 0 2.5em;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.product-entry img {
+    width: 100px;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.td-right {
+    text-align:right;
+    padding: 0 2.5em;
+}
+
+.price {
+    color: #000;
+    font-size: 20px;
+}
+
+.td-left {
+    padding: 0 2.5em;
+    text-align: left;
 }
 .bg_light{
     background: #f7fafa;
@@ -114,6 +177,18 @@ img.g-img + div {
     padding:2.5em;
 }
 
+
+
+.symbols {
+    display: none;
+    font-size: 1px;
+    max-height: 0px;
+    max-width: 0px;
+    opacity: 0;
+    overflow: hidden;
+    mso-hide: all;
+    font-family: sans-serif;
+}
 /*BUTTON*/
 .btn{
     padding: 10px 15px;
@@ -258,8 +333,3 @@ ul.social li{
     color: rgba(0,0,0,1);
 }
 
-
-@media screen and (max-width: 500px) {
-
-
-}
